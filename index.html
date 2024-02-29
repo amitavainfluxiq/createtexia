@@ -32,42 +32,81 @@
                     behavior: 'smooth'
                 });
             });
+
+
+            let navbar = document.getElementById('navbar').classList
+            let active_class = "navbar_scrolled"
+
+            window.addEventListener('scroll', e => {
+                if (pageYOffset > 100) navbar.add(active_class)
+                else navbar.remove(active_class)
+            })
+
+
+
+           
         });
+
+        function myFunction() {
+            var x = document.getElementById("navMenu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+            }
+
+
+
+
     </script>
 
 </head>
 
 <body>
     <div class="topContain">
-        <div class="topBar">
-            <div class="logo"><img src="images/logo.webp" alt="logo"></div>
-            <div class="navbar">
-                <ul>
+        <div class="topBar" id="navbar">
+            <div class="wrapper">
+                <div class="navbarwrapper">
+                    <div class="logo">
+                        <img src="images/logo.webp" alt="logo">
+                        <i onclick="myFunction()" class="lni-menu menuIcon"></i>
+                    </div>
+                    <div class="navbar" id="navMenu">
+                        <ul>
 
-                    <li><a href="javascript:void(0)"> <i class="lni-home"></i> Home</a></li>
-                    <li><a href="javascript:void(0)">About Us</a></li>
-                    <li><a href="javascript:void(0)"> Our Services</a></li>
-                    <li><a href="javascript:void(0)">Portfolio</a></li>
-                    <li><a href="javascript:void(0)"> Contact <i class="lni-map-marker"></i></a></li>
-                </ul>
+                            <li><a href="javascript:void(0)"> <i class="lni-home"></i> Home</a></li>
+                            <li><a href="javascript:void(0)">About Us</a></li>
+                            <li><a href="javascript:void(0)"> Our Services</a></li>
+                            <li><a href="javascript:void(0)">Portfolio</a></li>
+                            <li><a href="javascript:void(0)"> Contact <i class="lni-map-marker"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
+
+
 
         <div class="bannerblock">
-            <div class="bannerleft">
-                <h1>Engineering Innovation,
-                    Delivering Excellence</h1>
-                <p>Connect with us to
-                    get free consultation Now!</p>
-                <a href="javascript:void(0)">Request A Free Quote</a>
+            <div class="wrapper">
+                <div class="bannerwrapper">
+                    <div class="bannerleft">
+                        <h1>Engineering Innovation,
+                            Delivering Excellence</h1>
+                        <p>Connect with us to
+                            get free consultation Now!</p>
+                        <a href="javascript:void(0)">Request A Free Quote</a>
+                    </div>
+                    <div class="bannerright">
+                        <img src="images/banner_img_1.webp" alt="banner">
+                    </div>
+                </div>
+                <div class="bannerLine"></div>
             </div>
-            <div class="bannerright">
-                <img src="images/banner_img_1.webp" alt="banner">
-            </div>
-
         </div>
 
-        <div class="bannerLine"></div>
+        
 
     </div>
 

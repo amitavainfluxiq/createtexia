@@ -384,7 +384,7 @@
     position: absolute;
     top: -10px;
     left: 80%;
-    z-index: 9;
+    z-index: 5;
 }
 
 .contact_left{ width: 704px; height: 350px; border: solid 24px #c0cddc; border-radius: 10px; position: relative; z-index: 9; }
@@ -666,6 +666,7 @@
 .topBar.navbar_scrolled {
     position: fixed;
     /* top: -200px; */
+    z-index: 99;
     left: 0;
     width: 100%;
     background: #fff;
