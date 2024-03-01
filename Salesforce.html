@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+
+    <title>Createtexia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/LineIcons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+            window.addEventListener('scroll', function () {
+                if (window.pageYOffset > 100) { // Adjust the scroll amount as needed
+                    scrollToTopBtn.classList.add('show');
+                } else {
+                    scrollToTopBtn.classList.remove('show');
+                }
+            });
+
+            scrollToTopBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+
+            let navbar = document.getElementById('navbar').classList
+            let active_class = "navbar_scrolled"
+
+            window.addEventListener('scroll', e => {
+                if (pageYOffset > 100) navbar.add(active_class)
+                else navbar.remove(active_class)
+            })
+
+
+
+
+        });
+
+        function myFunction() {
+            var x = document.getElementById("navMenu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+
+
+
+    </script>
+
+
+
+</head>
+
+<body>
+    <div class="topContain innerpage">
+        <div class="topBar" id="navbar">
+            <div class="wrapper">
+                <div class="navbarwrapper">
+                    <div class="logo">
+                        <img src="images/logo.webp" alt="logo">
+                        <i onclick="myFunction()" class="lni-menu menuIcon"></i>
+                    </div>
+                    <div class="navbar" id="navMenu">
+                        <ul>
+
+                            <li><a href="javascript:void(0)"> <i class="lni-home"></i> Home</a></li>
+                            <li><a href="javascript:void(0)">About Us</a></li>
+                            <li><a href="javascript:void(0)"> Our Services</a></li>
+                            <li><a href="javascript:void(0)">Portfolio</a></li>
+                            <li><a href="javascript:void(0)"> Contact <i class="lni-map-marker"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+    <div class="services_banner">
+
+        <div class="wrapper">
+            <div class="services_banner_block">
+
+                <div class="Sbanner_IMG" data-aos="slide-left" data-aos-offset="300" data-aos-delay="500"><img
+                        src="images/Salesforce1.webp" alt="#"> </div>
+                <div class="Sbanner_text" data-aos="slide-right" data-aos-offset="300" data-aos-delay="500">
+                    <h2>Salesforce Solutions </h2>
+                    <p>Empower Your Business Growth with Salesforce Excellence.
+                        Ready to Elevate Your Success!!
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="services_banner_bottom">
+
+                <a href="javascript:void(0)">Schedule a Discussion Today!</a>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="services_block2">
+        <div class="wrapper">
+            <div class="flexcon">
+
+                <div class="services_blockleft">
+                    <img src="images/Salesforce2.webp" alt="#">
+                </div>
+
+
+                <div class="services_blockright">
+
+                    <label>At Creatixia, we specialize in providing top-notch Salesforce solutions to help businesses
+                        streamline their sales and marketing processes. With our expertise in Salesforce development, we
+                        offer a range of services tailored to meet your specific needs.
+                    </label>
+                    <h2>Here's how we can help you
+                    </h2>
+                    <strong> Salesforce Sales Cloud:</strong>
+                    <p>Our Salesforce Sales Cloud solutions empower your sales team with the tools they need to drive
+                        revenue growth and close deals faster. From lead management to opportunity tracking, we ensure
+                        that your sales process is optimized for success.</p>
+
+                    <strong>Salesforce Marketing Cloud:</strong>
+                    <p>Reach your target audience effectively and engage with them on a personalized level with our
+                        Salesforce Marketing Cloud services. From email marketing to social media integration, we help
+                        you create compelling campaigns that drive results.</p>
+
+                    <strong>Salesforce Service Cloud:</strong>
+                    <p>Deliver exceptional customer service experiences with our Salesforce Service Cloud solutions.
+                        From case management to omnichannel support, we help you provide timely and effective support to
+                        your customers, leading to increased satisfaction and loyalty.</p>
+ 
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="services_block3">
+        <div class="wrapper">
+            <div class="flexcon">
+
+                <div class="services_blockleft Salesforce3">
+                    <img src="images/Salesforce3.webp" alt="#">
+                </div>
+
+
+                <div class="services_blockright">
+
+                    
+
+                    <strong>Salesforce CPQ (Configure, Price, Quote):</strong>
+                    <p>Simplify your quoting process and accelerate sales cycles with our Salesforce CPQ services. We
+                        help you automate pricing, discounting, and quoting, ensuring accuracy and consistency across
+                        all sales channels.</p>
+
+                    <strong>Salesforce Experience Cloud:</strong>
+                    <p>Enhance collaboration and engagement with your partners, customers, and employees through our
+                        Salesforce Experience Cloud services. We help you create branded communities and portals that
+                        foster meaningful connections and drive business growth.</p>
+
+                    <p>With our deep understanding of the Salesforce platform and proven track record of success,
+                        Creatixia is your trusted partner for all your Salesforce development needs. Let us help you
+                        unlock the full potential of Salesforce and take your business to new heights.</p>
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="services_block7">
+
+        <div class="wrapper">
+            <h2>Technologies Used:</h2>
+            <label>Our team of professionals are proficient in the following areas of web development.</label>
+
+            <ul>
+                <li><a href="javascript:void(0)"> <img src="images/sIcon1.webp" alt="#"> </a></li>
+
+                <li><a href="javascript:void(0)"><img src="images/sIcon2.webp" alt="#"></a></li>
+                <li><a href="javascript:void(0)"><img src="images/sIcon3.webp" alt="#"></a></li>
+                <li><a href="javascript:void(0)"><img src="images/sIcon4.webp" alt="#"></a></li>
+                <li><a href="javascript:void(0)"><img src="images/sIcon5.webp" alt="#"></a></li>
+                <li><a href="javascript:void(0)"><img src="images/sIcon6.webp" alt="#"></a></li>
+                <li><a href="javascript:void(0)"><img src="images/sIcon7.webp" alt="#"></a></li>
+                <li><a href="javascript:void(0)"><img src="images/sIcon8.webp" alt="#"></a></li>
+                <li><a href="javascript:void(0)"><img src="images/sIcon9.webp" alt="#"></a></li>
+                <li><a href="javascript:void(0)"><img src="images/sIcon10.webp" alt="#"></a></li>
+                <li><a href="javascript:void(0)"><img src="images/sIcon11.webp" alt="#"></a></li>
+                <li><a href="javascript:void(0)"><img src="images/sIcon12.webp" alt="#"></a></li>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="innercontact">
+
+        <img src="images/footerconIMG.webp" alt="#" class="footerconIMG">
+        <div class="services_block8">
+
+
+
+            <div class="wrapper">
+                <p>Contact us today to learn more about how our Salesforce development<br/> services can benefit your business! 
+
+                </p>
+            </div>
+
+
+        </div>
+
+        <div class="contact_block">
+
+
+
+            <h2>Let's Get Started!!</h2>
+            <div class="wrapper">
+                <div class="contact_left"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.705421260204!2d88.4310048758009!3d22.961073518619475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89595aa6b3ba1%3A0xc379779552d09cf8!2sWebel%20IT%20park%20phase%201%20Kalyani!5e0!3m2!1sen!2sin!4v1709102009486!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                <div class="contact_right">
+                    <form>
+                        <div class="formWrapper">
+                            <div class="formsub2">
+                                <label>First Name</label>
+                                <input type="text">
+                            </div>
+                            <div class="formsub2">
+                                <label>Last Name</label>
+                                <input type="text">
+                            </div>
+                            <div class="formsub1">
+                                <label>Email</label>
+                                <input type="text">
+                            </div>
+                            <div class="formsub1">
+                                <label>Message</label>
+                                <textarea></textarea>
+                            </div>
+                            <button>Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="contact_avter">
+                    <img src="images/contact_img.webp" alt="#" data-aos="ease-out-sine" data-aos-offset="300"
+                        data-aos-delay="500">
+
+                    <span data-aos="zoom-in"></span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer1">
+        <div class="wrapper">
+            <div class="footeeSub1">
+                <h3>CONTACT</h3>
+                <p>Creatixia .<br />
+                    WEBEL IT Park, Kalyani,<br />
+                    West Bengal, India<br />
+                    Kalyani, West Bengal 741235, IN</p>
+                <p>
+                    Call: <a href="tel:+91 9831177560">+91 9831177560</a><br />
+                    Skype: Creatixia </p>
+                <p>
+                    Sales: <a href="mailto:sales@creatixia.com">sales@creatixia.com</a><br />
+                    Info: <a href="mailto:info@creatixia.com">info@creatixia.com</a></p>
+
+            </div>
+            <div class="footeeSub2">
+                <h3>Specialties</h3>
+                <p> Web Development, Web Design, Logo, Banner, Social Media Post, Python,
+                    Angular, React, Node, HTML, CSS, WordPress, graphics design, Website,
+                    Appication, Software Development, Photoshop, AWS, Ecommerce,
+                    and React</p>
+
+            </div>
+            <div class="footeeSub3">
+                <h3>SOCIAL MEDIA</h3>
+                <a href="javascript:void(0);"><i class="lni-facebook-filled"></i></a>
+                <a href="javascript:void(0);"><i class="lni-twitter-filled"></i></a>
+
+                <a href="javascript:void(0);"><i class="lni-instagram-filled"></i></a>
+                <a href="javascript:void(0);"><i class="lni-linkedin-original"></i></a>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer2">
+        <div class="wrapper">
+
+
+            <span>© Copyright 2015 - 2023 Creatixia </span>
+            <label>WEB DEVELOPMENT COMPANY / HIRE DESIGNERS AND DEVELOPERS</label>
+        </div>
+    </div>
+
+
+
+    <a href="#top" id="scrollToTopBtn">
+        <i class="lni-chevron-up"></i>
+    </a>
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init(
+        //     {
+        //   offset: 120,
+        //   delay: 0}
+    );
+</script>
+
+</html>
